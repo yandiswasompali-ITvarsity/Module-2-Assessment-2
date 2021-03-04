@@ -1,0 +1,607 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face{
+    src: url(fonts/static/Oswald-Regular.ttf);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body{
+  background-color:grey;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*================ Home page ======================*/
+/*====== Header =======*/
+header{
+    display: grid;
+    min-height: 100px;
+    grid-auto-flow: column;
+}
+
+
+
+
+.logo img{
+  
+    width: 450px;
+    height: 100px;
+}
+.pages {
+
+    width: 100%;
+    height: 40px;
+    background-color: rgb(226, 138, 5);
+    padding-top: 12px;
+
+}
+.pages a{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: oswald,'Times New Roman', Times, serif;}
+
+.pages a:hover {
+        color:#0a4e19  ; }
+
+.Contact-btn{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 22px;
+    font-weight: 800; 
+}
+
+.Contact-btn a{
+    background-color: rgb(9, 0, 58);
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 12px;
+    padding: 5px;
+    color: white;
+}
+.Contact-btn a:hover{
+    background-color: transparent;
+    color: rgb(9, 0, 58);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(9, 0, 58);
+}
+
+#check{
+    display: none;
+}
+
+.checkbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(9, 0, 58);
+    display: none;
+}
+
+
+
+/*================ Main ========================*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 60px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+.h3 {
+    color: rgb(6, 136, 6);
+    font: outline;
+}
+.prov{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.prov img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 20px;
+}
+
+/*============= Footer ==============*/
+footer{
+    margin-top: 120px;
+    padding: 10px;
+    border: 2px solid rgb(165, 100, 2);
+   
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.socials{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-content: center;
+    grid-gap: 20px;
+}
+
+.socials i{
+    font-size: 40px;
+    color: rgb(9, 0, 58);
+}
+
+
+/*============================ About ============================*/
+.about h2{
+    font-size: 35px;
+    color: rgb(9, 0, 58);
+    font-family: oswald,sans-serif;
+}
+.wrapper {
+    display: grid;
+    grid-auto-flow:column;
+    justify-content: center;
+    gap: 10px;
+}
+.about{
+    padding-top: 100px;
+    background-color: rgb(255, 255, 255, 0.6);
+    font-size: 20px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 10px;
+}
+
+.imgs img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 15px;
+}
+.imgs > div{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 5px;
+    
+}
+
+/*=============== Map-Page ==================*/
+header{
+    border: 2px solid rgb(165, 100, 2);
+    margin-bottom: 20px;
+}
+
+.map{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+
+}
+
+.map-pic{
+    width: 700px;
+    height: 700px;
+}
+.map img {
+    height: 700px;
+    width: 700px;
+    border: 2px solid rgb(165, 100, 2);
+}
+
+/*=================== Stores-Page ===========================*/
+
+h2{
+    font-family: oswald, sans-serif;
+    font-size: 30px;
+    color: rgb(6, 109, 15);
+    
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.stores-wrapper{
+    display: -moz-inline-stack;
+    grid-auto-flow: column;
+    justify-content: space-around;
+    align-content: right;
+    grid-gap: 20px;
+    margin: 10px;
+}
+
+.stores-container{
+    border: 2px solid rgb(6, 66, 1);
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255, 0.6);
+}
+.stores-container p{
+    font-size: 22px;
+    color: rgb(6, 109, 15);
+       
+    font-family: oswald,sans-serif;
+}
+li{
+    margin: 20px;
+    list-style: none;
+    font-size: 22px;
+}
+
+li a:hover{
+    text-decoration:underline rgb(9, 0, 58);
+}
+
+ul img{
+    width: 70px;
+    height: 70px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 50%;
+}
+
+/*================= Individual Store Page ===================*/
+.the-container{
+    display: grid;
+    grid-auto-flow: column;
+    align-self: auto;
+    justify-items: center;
+}
+
+.the-view img{
+    height: 250px;
+    width: 300px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 12px;
+}
+
+.store-logo img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 50%;
+}
+
+.store-info{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border: 2px solid rgb(165, 100, 2);
+        border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color:rgb(255, 255, 255, 0.6);
+    font-size: 20px;
+    padding: 5px;
+}
+/*============== Movies Pages ==================*/
+
+.movie img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(165, 100, 2);
+    border-radius: 12px;
+   
+}
+.the-wrapper li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 15px;
+}
+
+.the-wrapper{
+    background-color: rgb(255, 255, 255, 0.6);
+    border: 2px solid rgb(165, 100, 2);
+        border-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    
+}
+
+/*========= Individual Movie Pages ==============*/
+.movie-container{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    
+}
+.trailer-btn{
+    border: 2px solid rgb(165, 100, 2);
+        border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid rgb(165, 100, 2);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.trailer-btn:hover{
+    background-color: white;
+    color: rgb(9, 0, 58);
+}
+
+.movie-credits{
+    padding: 20px;
+    font-size: 22px;
+    background-color: rgb(255, 255, 255, 0.8);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/*==================== Contact Page =======================*/
+
+.Mall-contact{
+    
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.form ul li{
+    display: inline-block;
+}
+
+.contact-icon ul li p{
+    display: block;
+    font-size: 15px;
+}
+.contact-icon i{
+    font-size: 32px;
+    color: rg+b(9, 0, 58);
+}
+
+.form{
+    border: 5px solid rgb(165, 100, 2);    background-color: rgb(255, 255, 255, 0.4);
+width: 100%;
+height: 100%;
+}
+.form input, .form textarea, #sub-btn{
+    display: block;
+    border: none;
+    margin: 20% auto;
+    width: 90%;
+    padding: 2%;
+}
+
+.form input, .form textarea{
+    background-color: white;
+}
+::placeholder{
+    color:black;
+    font-size: 20px;
+}
+
+#sub-btn{
+    color: white;
+    background-color: rgb(9, 0, 58);
+    width: 50%;
+}
+#sub-btn:hover{
+    cursor: pointer;
+}
+
+/*================ Responsive Design ===================*/
+/*===== Header =====*/
+@media(min-width:703px){
+    .pages{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: space-around;
+        align-content: center;
+        grid-gap: 20px;
+        margin-top: 30px;
+    }
+
+    #contact-btn{
+        display: none;
+    }
+}    
+    
+@media(max-width:700px){
+    .Contact-btn{
+        display: none;
+    }
+
+    #mobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        align-content: center;
+        padding-left: 20px;
+    }
+    
+}
+
+/*=========== Responsive-Menu ==============*/
+
+@media(max-width:700px){
+
+    .checkbtn{
+        display: block;
+        z-index: 1;
+    }
+    
+    .pages{
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: space-around;
+        align-content: center;
+        grid-gap: 20px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(255, 255, 255, 0.7);
+        top: 0px;
+        left: -100%;
+        text-align: center;
+        transition: all .7s;
+    }
+
+    .pages a{
+        padding: 20px;
+    }
+
+    #check:checked ~ .pages{
+        left: 0;
+    }
+}
+
+/*== Home Page ==*/
+
+@media(max-width:700px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        gap: 15px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+/*= About =*/
+    .wrapper {
+        display: grid;
+        grid-auto-flow:row;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .imgs {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5px;
+    }
+
+    .about{
+        background-color: rgb(255, 255, 255, 0.6);
+        font-size: 20px;
+        border: 2px solid rgb(9, 0, 58);
+        border-radius: 10px;
+    }
+    
+    .imgs > div{
+        width: 150px;
+        height: 150px;
+        margin-bottom: 5px;
+        
+    }
+
+/*= Map =*/
+    .map-pic{
+        width: 500px;
+        height: 500px;
+    }
+    .map img {
+        height: 500px;
+        width: 500px;
+        border: 2px solid rgb(9, 0, 58);
+    }
+}
+
+
+@media(max-width:414px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+        gap: 15px;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+    }
+
+    /*= About =*/
+    .imgs {
+        display:grid;
+        grid-auto-flow: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    /*= Map =*/
+    .map-pic{
+        width: 300px;
+        height: 300px;
+    }
+    .map img {
+        height: 300px;
+        width: 300px;
+        border: 2px solid rgb(9, 0, 58);
+    }
+
+    /*=Individual Movie Page=*/
+    .movie-container div{
+        width: 200px;
+        height: 200px;
+    }
+    .movie-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .movie-credits{
+        overflow:scroll;
+    }
+    .poster{
+        object-fit: cover;
+    }
+
+}
+
+/*============ Stores Page =============*/
+@media(max-width:700px){
+    .stores-wrapper{
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: space-around;
+        align-content: center;
+        grid-gap: 20px;
+        margin: 10px;
+    }
+}
+
+/*== Individual Store Page ==*/
+@media (max-width:700px){
+    .the-container{
+        display: grid;
+        grid-auto-flow: row;
+        align-self: auto;
+        justify-items: center;
+        
+    }
+
+    /*=Individual Movie Page=*/
+    .movie-container div{
+        width: 350px;
+        height: 350px;
+    }
+    .movie-container img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .movie-credits{
+        overflow:scroll;
+    }
+    
+.gallery {align-self: center;
+
+
+
+}
+
+.gallery h7 {
+color: white;
+align-content: center; }
